@@ -10,7 +10,6 @@
         this.owl = scope;
         this.owl._options = $.extend({}, Properties.Defaults, this.owl.options);
 
-        //Properties.Owl = [this.owl]; // I know, I know, but needed! :/
         Properties.Options = this.owl._options;
         Properties.Options.propOwlTarget = this.owl.$element[0];
     	
@@ -59,7 +58,7 @@
     			
 	    		$(elItem).attr('data-title', propData[data].title); 			
 	    		$(elItem).attr('data-description', propData[data].description); 
-	    		if (propData[data].content != '') {
+	    		if (propData[data].content) {
 	    			$(elItem).html(propData[data].content);
 	    		}			
 
