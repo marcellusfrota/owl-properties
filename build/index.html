@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Owl Carousel - Properties Plugin</title>
+	<link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="owl-properties"></div>
+	<div class="owl-carousel"></div>
+	<div class="owl-content"></div>	
+	
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+
+	<script src="js/owl.carousel.properties.js"></script>
+	<script src="js/owl.carousel.properties.data.js"></script>
+	<script>
+
+		jQuery(document).ready(function($) {
+
+			$('.owl-carousel').owlCarousel({
+
+				// Properties Options
+				propTarget: '.owl-properties', // Default option, not required
+				propTitleContext: '<ul>', // Not required
+				propTitleTag: '<li>', // Default option, not required
+				propActiveClass: 'ativado', // 'active is default option, not required
+				propInactiveClass: 'desativado', // 'inactive' is default option, not required
+				propContentTarget: '.owl-content', // Opção padrão, não obrigatória
+				propContentTitleTag: '<h2>', // Padrão <h1>
+				propContentTextTag: '<div class="content">', // Padrão <p>
+				propItemTag: '<div class="item">', // Class called 'item' is required!
+				propEnableShortcutskey: true, // Default option, not required
+				propOptions: options, // Required
+				propData: data, // Optional for elements dinamycally created
+
+				// Owl Options
+				loop: true,
+			    margin: 10,
+			    nav: true,
+			    responsive: {
+			        0: {
+			            items: 1
+			        },
+			        600: {
+			            items: 3
+			        },
+			        1000: {
+			            items: 5 
+			            // Há um problema de rendirização se esse número
+			            // for menor que o total de itens.
+			        }
+			    }
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+	font-family: 'Verdana';
+}
+
+/* CSS Items do Carousel */
+
+.owl-carousel .item {
+    height: auto;/*10rem;*/
+    background: #efefef;
+    padding: 1rem;
+}
+.owl-carousel .item.focus {
+	background: #4DC7A0;
+}
+
+/* CSS Items das propriedades */
+
+.owl-properties ul {
+	list-style: none;
+}		
+.owl-properties li {
+	display: inline-block;
+	width: 10%;
+	padding: 20px;
+	background: #ccc;
+	color: #fff;
+}
+.owl-properties li.ativado {
+	background-color: green;
+}		
+.owl-properties li.desativado {
+	background-color: #efefef;
+	color: #555;
+}
+
+/* CSS Items do conteudo */
+
+.owl-content h2 {
+	text-align: center;
+}
