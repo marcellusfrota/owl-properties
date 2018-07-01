@@ -18,10 +18,6 @@ npm update
 
 There's a html file in 'build' folder. Follow the example
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [jQuery](https://jQuery.com/) - JavaScript library
@@ -29,9 +25,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Marcellus Frota** - [MarcellusFrota](https://github.com/marcellusfrota/)
+* **Marcellus Frota** - [development](https://github.com/marcellusfrota/)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/marcellusfrota/owl-properties/graphs/contributors) who participated in this project.
 
 ## License
 
